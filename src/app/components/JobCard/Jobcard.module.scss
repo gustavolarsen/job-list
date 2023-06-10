@@ -27,13 +27,13 @@
       .companyName {
         font-size: 0.94rem;
         color: var(--primary-cyan);
-        font-weight: 800;
+        font-weight: 700;
         margin-right: 1.5rem;
       }
 
       span {
         font-size: small;
-        font-weight: 800;
+        font-weight: 700;
         color: var(--white);
         padding: 4px 8px;
         border-radius: 999px;
@@ -61,13 +61,14 @@
         margin-right: 1.5rem;
         color: var(--dark-cyan);
         font-size: 0.75rem;
+        font-weight: 700;
 
         &:not(:last-child) {
           &::after {
             position: absolute;
             display: inline-block;
             content: '';
-            border-radius: 50%;
+            border-radius: 999px;
             height: 0.25rem;
             width: 0.25rem;
             margin-left: 0.55rem;
@@ -81,18 +82,21 @@
 
   .languages {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     border-top: 1px solid var(--dark-cyan);
     padding-top: 1.5rem;
     margin-top: 1.5rem;
 
     .language {
+      border: none;
       font-size: small;
       font-weight: 800;
       color: var(--primary-cyan);
       padding: 4px 8px;
       border-radius: 4px;
       background-color: var(--light-cyan);
+      cursor: pointer;
     }
   }
 }

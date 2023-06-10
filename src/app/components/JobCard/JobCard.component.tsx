@@ -53,9 +53,9 @@ const JobCard = ({ job }: IJobProps) => {
       <section className={styles.languages}>
         {job.languages.map((language, index) => {
           return (
-            <span className={styles.language} key={index}>
+            <button className={styles.language} key={index}>
               {language}
-            </span>
+            </button>
           );
         })}
       </section>
