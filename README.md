@@ -21,8 +21,8 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/job-listings-with-filtering-made-with-next](https://www.frontendmentor.io/solutions/job-listings-with-filtering-made-with-nextjs-623AQ_vyuw/)
+- Live Site URL: [https://job-list-sandy.vercel.app/](https://job-list-sandy.vercel.app/)
 
 ## Built with
 
