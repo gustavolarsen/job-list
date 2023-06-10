@@ -53,6 +53,8 @@ const JobCard = ({ job }: IJobProps) => {
       </div>
 
       <section className={styles.languages}>
+        <button className={styles.language}>{job.level}</button>
+        <button className={styles.language}>{job.role}</button>
         {job.languages.map((language, index) => {
           return (
             <button className={styles.language} key={index}>
