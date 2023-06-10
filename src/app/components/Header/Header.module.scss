@@ -1,0 +1,11 @@
+.header {
+  background: var(--primary-cyan) url('./assets/bg-header-mobile.svg') no-repeat;
+  height: 154px;
+}
+
+@media (min-width: 375px) {
+  .header {
+    background: var(--primary-cyan) url('./assets/bg-header-desktop.svg')
+      no-repeat;
+  }
+}

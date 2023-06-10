@@ -1,7 +1,7 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Overpass } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Overpass({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Job Listings with filtering',
