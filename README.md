@@ -1,8 +1,8 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - Job listings with filtering
 
 ![](./design/desktop-preview.jpg)
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,10 +15,9 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- Filter job listings based on the categories
 
 ## Links
 
@@ -27,11 +26,10 @@ Users should be able to:
 
 ## Built with
 
-- [Vite](https://vitejs.dev/)
-- [React](https://reactjs.org/)
-- [TailwindCss](https://tailwindcss.com/)
+- [NextJS 13](https://nextjs.org/)
+- [Sass](https://sass-lang.com/)
 
 ## Author
 
-- Website - [Gustavo Larsen](https://github.com/gustavolarsen)
+- Profile - [Gustavo Larsen](https://github.com/gustavolarsen)
 - Frontend Mentor - [@gustavolarsen](https://www.frontendmentor.io/profile/gustavolarsen)
