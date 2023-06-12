@@ -1,25 +1,12 @@
 import Image from 'next/image';
-import styles from './Jobcard.module.scss';
+import { JobsListType } from '@/app/services/Jobs.service';
+import styles from './JobCard.module.scss';
 
-interface IJobProps {
-  job: {
-    id: number;
-    company: string;
-    logo: string;
-    new: boolean;
-    featured: boolean;
-    position: string;
-    role: string;
-    level: string;
-    postedAt: string;
-    contract: string;
-    location: string;
-    languages: Array<string>;
-    tools: Array<string>;
-  };
-}
-
-const JobCard = ({ job }: IJobProps) => {
+type JobCardProps = {
+  children: React.ReactNode;
+  job: JobsListType;
+};
+const JobCard = ({ job, children }: JobCardProps) => {
   return (
     <li
       className={`${
@@ -35,6 +22,7 @@ const JobCard = ({ job }: IJobProps) => {
           width={48}
           height={48}
           alt="Logo da empresa"
+          priority={false}
         />
         <section className={styles.content}>
           <div className={styles.headerJob}>
@@ -51,18 +39,7 @@ const JobCard = ({ job }: IJobProps) => {
           </p>
         </section>
       </div>
-
-      <section className={styles.languages}>
-        <button className={styles.language}>{job.level}</button>
-        <button className={styles.language}>{job.role}</button>
-        {job.languages.map((language, index) => {
-          return (
-            <button className={styles.language} key={index}>
-              {language}
-            </button>
-          );
-        })}
-      </section>
+      {children}
     </li>
   );
 };

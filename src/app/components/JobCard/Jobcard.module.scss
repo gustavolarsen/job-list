@@ -81,26 +81,6 @@
       }
     }
   }
-
-  .languages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    border-top: 1px solid var(--dark-cyan);
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-
-    .language {
-      border: none;
-      font-size: small;
-      font-weight: 800;
-      color: var(--primary-cyan);
-      padding: 4px 8px;
-      border-radius: 4px;
-      background-color: var(--light-cyan);
-      cursor: pointer;
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -109,7 +89,6 @@
     align-items: center;
     justify-content: space-between;
 
-    margin: 1.5rem;
     padding: 1rem;
 
     > div {
@@ -127,14 +106,6 @@
 
     .content {
       gap: 0.5rem;
-    }
-
-    .languages {
-      margin: unset;
-      padding: unset;
-      align-items: center;
-      justify-content: flex-end;
-      border: none;
     }
   }
 }
