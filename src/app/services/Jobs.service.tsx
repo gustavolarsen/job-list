@@ -1,4 +1,20 @@
-const Jobs = [
+type JobsListType = {
+  id: number;
+  company: string;
+  logo: string;
+  new: boolean;
+  featured: boolean;
+  position: string;
+  role: string;
+  level: string;
+  postedAt: string;
+  contract: string;
+  location: string;
+  languages: Array<string>;
+  tools: Array<string>;
+};
+
+const JobsList = [
   {
     id: 1,
     company: 'Photosnap',
@@ -151,4 +167,5 @@ const Jobs = [
   },
 ];
 
-export { Jobs };
+export { JobsList };
+export type { JobsListType };

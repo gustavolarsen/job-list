@@ -1,6 +1,6 @@
 .header {
   background: var(--primary-cyan) url('./assets/bg-header-mobile.svg') no-repeat;
-  height: 154px;
+  height: var(--header-height);
 }
 
 @media (min-width: 375px) {
