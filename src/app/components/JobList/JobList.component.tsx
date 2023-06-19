@@ -20,9 +20,7 @@ const JobList = () => {
               filterList.includes(item)
             );
 
-            return (
-              roleFilterApplied || levelFilterApplied || languagesFilterApplied
-            );
+            return roleFilterApplied || levelFilterApplied || languagesFilterApplied;
           })
         : JobsList;
 
@@ -30,8 +28,7 @@ const JobList = () => {
   };
 
   const handleSetFilterJob = (tagFilter: string) => {
-    if (!filterList.includes(tagFilter))
-      setFilterList([...filterList, tagFilter]);
+    if (!filterList.includes(tagFilter)) setFilterList([...filterList, tagFilter]);
   };
 
   const handleRemoveFilter = (tagFilter: string) => {
